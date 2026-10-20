@@ -1,0 +1,25 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+    <Scene>
+        <DigitalClock
+            x="25"
+            y="175"
+            width="400"
+            height="100">
+            <TimeText
+                x="0"
+                y="0"
+                width="400"
+                height="100"
+                format="hh:mm"
+                hourFormat="24"
+                align="CENTER">
+                <Font
+                    family="SYNC_TO_DEVICE"
+                    size="76"
+                    color="#C8DCE1" />
+            </TimeText>
+        </DigitalClock>
+    </Scene>
+</WatchFace>
