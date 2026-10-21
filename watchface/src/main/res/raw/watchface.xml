@@ -15,7 +15,7 @@
                 hourFormat="24"
                 align="CENTER">
                 <Font
-                    family="aurebesh"
+                    family="aurebesh_canon"
                     size="76"
                     color="#C8DCE1" />
             </TimeText>
@@ -28,7 +28,7 @@
             height="45">
             <Text align="CENTER">
                 <Font
-                    family="aurebesh_narrow"
+                    family="aurebesh_canon"
                     size="28"
                     color="#C8DCE1">
                     <Template>%s %d/%d
@@ -47,7 +47,7 @@
             height="40">
             <Text align="CENTER">
                 <Font
-                    family="aurebesh_narrow"
+                    family="aurebesh_canon"
                     size="25"
                     color="#C8DCE1">
                     <Template>BAT %d%%
