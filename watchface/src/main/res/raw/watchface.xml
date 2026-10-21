@@ -1,25 +1,60 @@
 
-<?xml version="1.0" encoding="utf-8"?>
 <WatchFace width="450" height="450">
     <Scene>
         <DigitalClock
             x="25"
-            y="175"
+            y="140"
             width="400"
-            height="100">
+            height="110">
             <TimeText
                 x="0"
                 y="0"
                 width="400"
-                height="100"
+                height="110"
                 format="hh:mm"
                 hourFormat="24"
                 align="CENTER">
                 <Font
-                    family="SYNC_TO_DEVICE"
+                    family="aurebesh"
                     size="76"
                     color="#C8DCE1" />
             </TimeText>
         </DigitalClock>
+
+        <PartText
+            x="35"
+            y="260"
+            width="380"
+            height="45">
+            <Text align="CENTER">
+                <Font
+                    family="aurebesh_narrow"
+                    size="28"
+                    color="#C8DCE1">
+                    <Template>%s %d/%d
+                        <Parameter expression="[DAY_OF_WEEK_S]" />
+                        <Parameter expression="[DAY]" />
+                        <Parameter expression="[MONTH]" />
+                    </Template>
+                </Font>
+            </Text>
+        </PartText>
+
+        <PartText
+            x="75"
+            y="325"
+            width="300"
+            height="40">
+            <Text align="CENTER">
+                <Font
+                    family="aurebesh_narrow"
+                    size="25"
+                    color="#C8DCE1">
+                    <Template>BAT %d%%
+                        <Parameter expression="[BATTERY_PERCENT]" />
+                    </Template>
+                </Font>
+            </Text>
+        </PartText>
     </Scene>
 </WatchFace>
