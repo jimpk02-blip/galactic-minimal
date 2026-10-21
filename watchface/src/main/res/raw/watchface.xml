@@ -1,44 +1,26 @@
 
-<?xml version="1.0" encoding="utf-8"?>
 <WatchFace width="450" height="450">
     <Scene>
 
         <!-- JOUR ABREGE -->
-        <PartText
-            x="25" y="65"
-            width="400" height="55"
-            alpha="255">
-            <Variant
-                mode="AMBIENT"
-                target="alpha"
-                value="0" />
+        <PartText x="25" y="65" width="400" height="55">
             <Text align="CENTER">
-                <Font
-                    family="aurebesh_canon"
-                    size="36"
-                    color="#C8DCE1">
+                <Font family="aurebesh_canon"
+                      size="36"
+                      color="#C8DCE1">
                     <Template>%s
-                        <Parameter
-                            expression="[DAY_OF_WEEK_S]" />
+                        <Parameter expression="[DAY_OF_WEEK_S]" />
                     </Template>
                 </Font>
             </Text>
         </PartText>
 
-        <!-- DATE JJ/MM/AAAA -->
-        <PartText
-            x="25" y="125"
-            width="400" height="55"
-            alpha="255">
-            <Variant
-                mode="AMBIENT"
-                target="alpha"
-                value="0" />
+        <!-- DATE -->
+        <PartText x="25" y="125" width="400" height="55">
             <Text align="CENTER">
-                <Font
-                    family="aurebesh_canon"
-                    size="30"
-                    color="#C8DCE1">
+                <Font family="aurebesh_canon"
+                      size="30"
+                      color="#C8DCE1">
                     <Template>%02d/%02d/%04d
                         <Parameter expression="[DAY]" />
                         <Parameter expression="[MONTH]" />
@@ -48,71 +30,32 @@
             </Text>
         </PartText>
 
-        <!-- HEURE ACTIVE AVEC SECONDES -->
-        <DigitalClock
-            x="5" y="185"
-            width="440" height="110"
-            alpha="255">
-            <Variant
-                mode="AMBIENT"
-                target="alpha"
-                value="0" />
-            <TimeText
-                x="0" y="0"
-                width="440" height="110"
-                format="hh:mm:ss"
-                hourFormat="24"
-                align="CENTER">
-                <Font
-                    family="aurebesh_canon"
-                    size="66"
-                    color="#C8DCE1" />
+        <!-- HEURE AVEC SECONDES -->
+        <DigitalClock x="5" y="185"
+                      width="440" height="110">
+            <TimeText x="0" y="0"
+                      width="440" height="110"
+                      format="hh:mm:ss"
+                      hourFormat="24"
+                      align="CENTER">
+                <Font family="aurebesh_canon"
+                      size="66"
+                      color="#C8DCE1" />
             </TimeText>
         </DigitalClock>
 
-        <!-- BATTERIE ACTIVE -->
-        <PartText
-            x="25" y="315"
-            width="400" height="55"
-            alpha="255">
-            <Variant
-                mode="AMBIENT"
-                target="alpha"
-                value="0" />
+        <!-- BATTERIE -->
+        <PartText x="25" y="315" width="400" height="55">
             <Text align="CENTER">
-                <Font
-                    family="aurebesh_canon"
-                    size="30"
-                    color="#C8DCE1">
+                <Font family="aurebesh_canon"
+                      size="30"
+                      color="#C8DCE1">
                     <Template>BAT %d%%
-                        <Parameter
-                            expression="[BATTERY_PERCENT]" />
+                        <Parameter expression="[BATTERY_PERCENT]" />
                     </Template>
                 </Font>
             </Text>
         </PartText>
-
-        <!-- HEURE AOD : GRANDE ET CENTREE -->
-        <DigitalClock
-            x="5" y="165"
-            width="440" height="120"
-            alpha="0">
-            <Variant
-                mode="AMBIENT"
-                target="alpha"
-                value="255" />
-            <TimeText
-                x="0" y="0"
-                width="440" height="120"
-                format="hh:mm"
-                hourFormat="24"
-                align="CENTER">
-                <Font
-                    family="aurebesh_canon"
-                    size="90"
-                    color="#82989F" />
-            </TimeText>
-        </DigitalClock>
 
     </Scene>
 </WatchFace>
