@@ -11,12 +11,12 @@
                 y="0"
                 width="400"
                 height="110"
-                format="hh:mm"
+                format="hh:mm:ss"
                 hourFormat="24"
                 align="CENTER">
                 <Font
                     family="aurebesh_canon"
-                    size="76"
+                    size="58"
                     color="#C8DCE1" />
             </TimeText>
         </DigitalClock>
