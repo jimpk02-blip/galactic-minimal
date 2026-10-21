@@ -1,55 +1,54 @@
 
 <WatchFace width="450" height="450">
     <Scene>
-        <DigitalClock
-            x="25"
-            y="140"
-            width="400"
-            height="110">
-            <TimeText
-                x="0"
-                y="0"
-                width="400"
-                height="110"
-                format="hh:mm:ss"
-                hourFormat="24"
-                align="CENTER">
-                <Font
-                    family="aurebesh_canon"
-                    size="58"
-                    color="#C8DCE1" />
-            </TimeText>
-        </DigitalClock>
-
-        <PartText
-            x="35"
-            y="260"
-            width="380"
-            height="45">
+        <!-- JOUR ABREGE -->
+        <PartText x="25" y="85" width="400" height="50">
             <Text align="CENTER">
-                <Font
-                    family="aurebesh_canon"
-                    size="28"
-                    color="#C8DCE1">
-                    <Template>%s %d/%d
+                <Font family="aurebesh_canon"
+                      size="28"
+                      color="#C8DCE1">
+                    <Template>%s
                         <Parameter expression="[DAY_OF_WEEK_S]" />
-                        <Parameter expression="[DAY]" />
-                        <Parameter expression="[MONTH]" />
                     </Template>
                 </Font>
             </Text>
         </PartText>
 
-        <PartText
-            x="75"
-            y="325"
-            width="300"
-            height="40">
+        <!-- DATE JJ/MM/AAAA -->
+        <PartText x="25" y="145" width="400" height="45">
             <Text align="CENTER">
-                <Font
-                    family="aurebesh_canon"
-                    size="25"
-                    color="#C8DCE1">
+                <Font family="aurebesh_canon"
+                      size="24"
+                      color="#C8DCE1">
+                    <Template>%02d/%02d/%04d
+                        <Parameter expression="[DAY]" />
+                        <Parameter expression="[MONTH]" />
+                        <Parameter expression="[YEAR]" />
+                    </Template>
+                </Font>
+            </Text>
+        </PartText>
+
+        <!-- HEURE AVEC SECONDES -->
+        <DigitalClock x="10" y="195"
+                      width="430" height="110">
+            <TimeText x="0" y="0"
+                      width="430" height="110"
+                      format="hh:mm:ss"
+                      hourFormat="24"
+                      align="CENTER">
+                <Font family="aurebesh_canon"
+                      size="50"
+                      color="#C8DCE1" />
+            </TimeText>
+        </DigitalClock>
+
+        <!-- BATTERIE -->
+        <PartText x="25" y="325" width="400" height="45">
+            <Text align="CENTER">
+                <Font family="aurebesh_canon"
+                      size="22"
+                      color="#C8DCE1">
                     <Template>BAT %d%%
                         <Parameter expression="[BATTERY_PERCENT]" />
                     </Template>
