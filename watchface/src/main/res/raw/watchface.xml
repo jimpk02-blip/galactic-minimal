@@ -1,61 +1,133 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <WatchFace width="450" height="450">
-    <Scene>
-
-        <!-- JOUR ABREGE -->
-        <PartText x="25" y="65" width="400" height="55">
+  <UserConfigurations>
+    <ListConfiguration id="time_mode" displayName="time_mode_label" screenReaderText="time_mode_label" defaultValue="0">
+      <ListOption id="0" displayName="gst_label" screenReaderText="gst_label" />
+      <ListOption id="1" displayName="lpt_label" screenReaderText="lpt_label" />
+    </ListConfiguration>
+  </UserConfigurations>
+  <Scene>
+    <ListConfiguration id="time_mode">
+      <ListOption id="0">
+        <Group name="active_GST" x="0" y="0" width="450" height="450" alpha="255">
+          <Variant mode="AMBIENT" target="alpha" value="0" />
+          <Localization timeZone="America/Toronto" />
+          <PartText x="120" y="24" width="210" height="36">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="18" color="#C8DCE1">GALAXY CHRONOS</Font></Text>
+          </PartText>
+          <PartText x="95" y="71" width="120" height="45">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="30" color="#C8DCE1">GST</Font></Text>
+          </PartText>
+          <PartText x="235" y="71" width="120" height="45">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="30" color="#526A75">LPT</Font></Text>
+          </PartText>
+          <PartText x="25" y="125" width="400" height="47">
             <Text align="CENTER">
-                <Font family="aurebesh_canon"
-                      size="36"
-                      color="#C8DCE1">
-                    <Template>%s
-                        <Parameter expression="[DAY_OF_WEEK_S]" />
-                    </Template>
-                </Font>
+              <Font family="aurebesh_canon" size="34" color="#C8DCE1">
+                <Template>%s
+                  <Parameter expression="[DAY_OF_WEEK_S]" />
+                </Template>
+              </Font>
             </Text>
-        </PartText>
-
-        <!-- DATE -->
-        <PartText x="25" y="125" width="400" height="55">
+          </PartText>
+          <PartText x="25" y="166" width="400" height="43">
             <Text align="CENTER">
-                <Font family="aurebesh_canon"
-                      size="30"
-                      color="#C8DCE1">
-                    <Template>%02d/%02d/%04d
-                        <Parameter expression="[DAY]" />
-                        <Parameter expression="[MONTH]" />
-                        <Parameter expression="[YEAR]" />
-                    </Template>
-                </Font>
+              <Font family="aurebesh_canon" size="28" color="#C8DCE1">
+                <Template>%02d/%02d/%04d
+                  <Parameter expression="[DAY]" />
+                  <Parameter expression="[MONTH]" />
+                  <Parameter expression="[YEAR]" />
+                </Template>
+              </Font>
             </Text>
-        </PartText>
-
-        <!-- HEURE AVEC SECONDES -->
-        <DigitalClock x="5" y="185"
-                      width="440" height="110">
-            <TimeText x="0" y="0"
-                      width="440" height="110"
-                      format="hh:mm:ss"
-                      hourFormat="24"
-                      align="CENTER">
-                <Font family="aurebesh_canon"
-                      size="66"
-                      color="#C8DCE1" />
+          </PartText>
+          <DigitalClock x="0" y="207" width="450" height="100">
+            <TimeText x="0" y="0" width="450" height="100" format="hh:mm:ss" hourFormat="24" align="CENTER">
+              <Font family="aurebesh_canon" size="65" color="#C8DCE1" />
             </TimeText>
-        </DigitalClock>
-
-        <!-- BATTERIE -->
-        <PartText x="25" y="315" width="400" height="55">
+          </DigitalClock>
+          <PartText x="20" y="318" width="410" height="42">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="22" color="#C8DCE1">GALACTIC STANDARD</Font></Text>
+          </PartText>
+          <PartText x="25" y="366" width="400" height="44">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="27" color="#C8DCE1">
+              <Template>BAT %d%%<Parameter expression="[BATTERY_PERCENT]" /></Template>
+            </Font></Text>
+          </PartText>
+        </Group>
+        <Group name="ambient_GST" x="0" y="0" width="450" height="450" alpha="0">
+          <Variant mode="AMBIENT" target="alpha" value="255" />
+          <Localization timeZone="America/Toronto" />
+          <PartText x="100" y="70" width="250" height="56">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="36" color="#8EAAB5">GST</Font></Text>
+          </PartText>
+          <DigitalClock x="0" y="169" width="450" height="112">
+            <TimeText x="0" y="0" width="450" height="112" format="hh:mm" hourFormat="24" align="CENTER">
+              <Font family="aurebesh_canon" size="90" color="#A2BDC6" />
+            </TimeText>
+          </DigitalClock>
+        </Group>
+      </ListOption>
+      <ListOption id="1">
+        <Group name="active_LPT" x="0" y="0" width="450" height="450" alpha="255">
+          <Variant mode="AMBIENT" target="alpha" value="0" />
+          <Localization timeZone="SYNC_TO_DEVICE" />
+          <PartText x="120" y="24" width="210" height="36">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="18" color="#C8DCE1">GALAXY CHRONOS</Font></Text>
+          </PartText>
+          <PartText x="95" y="71" width="120" height="45">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="30" color="#526A75">GST</Font></Text>
+          </PartText>
+          <PartText x="235" y="71" width="120" height="45">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="30" color="#C8DCE1">LPT</Font></Text>
+          </PartText>
+          <PartText x="25" y="125" width="400" height="47">
             <Text align="CENTER">
-                <Font family="aurebesh_canon"
-                      size="30"
-                      color="#C8DCE1">
-                    <Template>BAT %d%%
-                        <Parameter expression="[BATTERY_PERCENT]" />
-                    </Template>
-                </Font>
+              <Font family="aurebesh_canon" size="34" color="#C8DCE1">
+                <Template>%s
+                  <Parameter expression="[DAY_OF_WEEK_S]" />
+                </Template>
+              </Font>
             </Text>
-        </PartText>
-
-    </Scene>
+          </PartText>
+          <PartText x="25" y="166" width="400" height="43">
+            <Text align="CENTER">
+              <Font family="aurebesh_canon" size="28" color="#C8DCE1">
+                <Template>%02d/%02d/%04d
+                  <Parameter expression="[DAY]" />
+                  <Parameter expression="[MONTH]" />
+                  <Parameter expression="[YEAR]" />
+                </Template>
+              </Font>
+            </Text>
+          </PartText>
+          <DigitalClock x="0" y="207" width="450" height="100">
+            <TimeText x="0" y="0" width="450" height="100" format="hh:mm:ss" hourFormat="24" align="CENTER">
+              <Font family="aurebesh_canon" size="65" color="#C8DCE1" />
+            </TimeText>
+          </DigitalClock>
+          <PartText x="20" y="318" width="410" height="42">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="22" color="#C8DCE1">LOCAL PLANETARY</Font></Text>
+          </PartText>
+          <PartText x="25" y="366" width="400" height="44">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="27" color="#C8DCE1">
+              <Template>BAT %d%%<Parameter expression="[BATTERY_PERCENT]" /></Template>
+            </Font></Text>
+          </PartText>
+        </Group>
+        <Group name="ambient_LPT" x="0" y="0" width="450" height="450" alpha="0">
+          <Variant mode="AMBIENT" target="alpha" value="255" />
+          <Localization timeZone="SYNC_TO_DEVICE" />
+          <PartText x="100" y="70" width="250" height="56">
+            <Text align="CENTER"><Font family="aurebesh_canon" size="36" color="#8EAAB5">LPT</Font></Text>
+          </PartText>
+          <DigitalClock x="0" y="169" width="450" height="112">
+            <TimeText x="0" y="0" width="450" height="112" format="hh:mm" hourFormat="24" align="CENTER">
+              <Font family="aurebesh_canon" size="90" color="#A2BDC6" />
+            </TimeText>
+          </DigitalClock>
+        </Group>
+      </ListOption>
+    </ListConfiguration>
+  </Scene>
 </WatchFace>
