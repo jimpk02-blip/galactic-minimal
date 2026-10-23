@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Galaxy Chronos</string>
+    <string name="gc_mode">Mode horaire</string>
+    <string name="gc_gst">GST - Référence</string>
+    <string name="gc_lpt">LPT - Heure locale</string>
+    <string name="gc_zone">Fuseau GST</string>
+    <string name="gc_palette">Couleur</string>
+    <string name="gc_blue">Bleu galactique</string>
+    <string name="gc_red">Rouge nocturne</string>
+    <string name="gc_zone_0">Toronto</string>
+    <string name="gc_zone_1">New York</string>
+    <string name="gc_zone_2">Chicago</string>
+    <string name="gc_zone_3">Denver</string>
+    <string name="gc_zone_4">Los Angeles</string>
+    <string name="gc_zone_5">Londres</string>
+    <string name="gc_zone_6">Paris</string>
+    <string name="gc_zone_7">Tokyo</string>
+    <string name="gc_zone_8">Sydney</string>
+</resources>
