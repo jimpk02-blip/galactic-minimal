@@ -1,1 +1,7 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFaceInfo>
+    <Category value="CATEGORY_EMPTY" />
+    <AvailableInRetail value="false" />
+    <MultipleInstancesAllowed value="true" />
+    <Editable value="true" />
+</WatchFaceInfo>
