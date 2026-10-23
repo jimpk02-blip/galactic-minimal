@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Galaxy Chronos</string>
-    <string name="time_mode">Time Mode</string>
-    <string name="gst">GST</string>
-    <string name="lpt">LPT</string>
-</resources>
