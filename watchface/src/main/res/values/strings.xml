@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-<string name="app_name">Galaxy Chronos</string>
-<string name="gc_mode">Mode horaire</string>
-<string name="gc_gst">GST - Référence UTC</string>
-<string name="gc_lpt">LPT - Heure locale</string>
-<string name="gc_zone">Décalage UTC (GST)</string>
-<string name="gc_palette">Couleur</string>
-<string name="gc_blue">Bleu galactique</string>
-<string name="gc_red">Rouge nocturne</string>
-<string name="gc_zone_0">UTC-12:00</string><string name="gc_zone_1">UTC-11:00</string><string name="gc_zone_2">UTC-10:00</string><string name="gc_zone_3">UTC-09:00</string><string name="gc_zone_4">UTC-08:00</string><string name="gc_zone_5">UTC-07:00</string><string name="gc_zone_6">UTC-06:00</string><string name="gc_zone_7">UTC-05:00</string><string name="gc_zone_8">UTC-04:00</string><string name="gc_zone_9">UTC-03:00</string><string name="gc_zone_10">UTC-02:00</string><string name="gc_zone_11">UTC-01:00</string><string name="gc_zone_12">UTC±00:00</string><string name="gc_zone_13">UTC+01:00</string><string name="gc_zone_14">UTC+02:00</string><string name="gc_zone_15">UTC+03:00</string><string name="gc_zone_16">UTC+04:00</string><string name="gc_zone_17">UTC+05:00</string><string name="gc_zone_18">UTC+06:00</string><string name="gc_zone_19">UTC+07:00</string><string name="gc_zone_20">UTC+08:00</string><string name="gc_zone_21">UTC+09:00</string><string name="gc_zone_22">UTC+10:00</string><string name="gc_zone_23">UTC+11:00</string></resources>
+    <string name="app_name">Galaxy Chronos</string>
+    <string name="gc_mode">Mode horaire</string>
+    <string name="gc_gst">GST — Galactic Standard</string>
+    <string name="gc_lpt">LPT — Planetary Time</string>
+    <string name="gc_zone">Fuseau GST</string>
+    <string name="gc_palette">Couleur</string>
+    <string name="gc_blue">Galactic Blue</string>
+    <string name="gc_red">Tactical Red</string>
+    <string name="gc_zone_0">UTC-12</string><string name="gc_zone_1">UTC-11</string><string name="gc_zone_2">UTC-10</string><string name="gc_zone_3">UTC-9</string><string name="gc_zone_4">UTC-8</string><string name="gc_zone_5">UTC-7</string><string name="gc_zone_6">UTC-6</string><string name="gc_zone_7">UTC-5</string><string name="gc_zone_8">UTC-4</string><string name="gc_zone_9">UTC-3</string><string name="gc_zone_10">UTC-2</string><string name="gc_zone_11">UTC-1</string><string name="gc_zone_12">UTC+0</string><string name="gc_zone_13">UTC+1</string><string name="gc_zone_14">UTC+2</string><string name="gc_zone_15">UTC+3</string><string name="gc_zone_16">UTC+4</string><string name="gc_zone_17">UTC+5</string><string name="gc_zone_18">UTC+6</string><string name="gc_zone_19">UTC+7</string><string name="gc_zone_20">UTC+8</string><string name="gc_zone_21">UTC+9</string><string name="gc_zone_22">UTC+10</string><string name="gc_zone_23">UTC+11</string></resources>
